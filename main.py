@@ -1,3 +1,8 @@
+class Trip:
+	def __init__(self, dist, comment= "Не регламентировано" ):
+			self.distance = dist
+			self.comment = comment
+
 class Transport:
 	def __init__ (self, fuel):
 		self.fuel = fuel
@@ -26,6 +31,6 @@ class Airplane (Transport):
 	def calculate_reachable_distance (self):
 		distance_covered = self.sum_trips_distance()
 		result = (self.fuel - (distance_covered * self.FUEL_CONSUMPTION_AIRPLANE)) // self.FUEL_CONSUMPTION_AIRPLANE
-		return f"Топлива остлаось на {result} ч. полета"
+		return f"Топлива осталось на {result} ч. полета"
 
-# Андрей, реализуй, пожалуйста класс Trip и протестируй код
+

@@ -26,6 +26,6 @@ class Airplane (Transport):
 	def calculate_reachable_distance (self):
 		distance_covered = self.sum_trips_distance()
 		result = (self.fuel - (distance_covered * self.FUEL_CONSUMPTION_AIRPLANE)) // self.FUEL_CONSUMPTION_AIRPLANE
-		return f"Топлива остлаось на {result} ч. полета"
+		return f"Осталось топлива (часы): {result}"
 
 # Андрей, реализуй, пожалуйста класс Trip и протестируй код

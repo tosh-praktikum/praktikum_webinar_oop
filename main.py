@@ -33,4 +33,4 @@ class Airplane (Transport):
 		result = (self.fuel - (distance_covered * self.FUEL_CONSUMPTION_AIRPLANE)) // self.FUEL_CONSUMPTION_AIRPLANE
 		return f"Топлива осталось на {result} ч. полета"
 
-
+#Комментарий

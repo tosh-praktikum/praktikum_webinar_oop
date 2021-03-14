@@ -28,5 +28,4 @@ class Airplane (Transport):
 		result = (self.fuel - (distance_covered * self.FUEL_CONSUMPTION_AIRPLANE)) // self.FUEL_CONSUMPTION_AIRPLANE
 		return f"Топлива остлаось на {result} ч. полета"
 
-c = Car(50)
-print(c.calculate_reachable_distance())
+# Андрей, реализуй, пожалуйста класс Trip и протестируй код
